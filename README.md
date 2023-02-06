@@ -1,15 +1,73 @@
-# Inventory Management System Project in Laravel
 
-A web-based tool that allows you to conveniently manage stock inventory: Dashboard, Stock Management, Purchasing, Sales, Suppliers, Customers, Outstanding’s, and Payments are all included in this Inventory Management System. The interface has a nice look and feel to it.
+# ![Inventory Management System](logo.png)
 
-The current logged in user’s ID is automatically assigned to all motions, stocks, and inventory items. Laravel’s built-in database transactions cover all inventory actions such as puts, removals, and creations. Any exceptions that arise during an inventory update will be automatically rolled back.
+----------
 
-## What is an Inventory Management System and How Does It Work?
-There are several important components to an inventory management system. Inventory control is based on tracking the two primary tasks of a warehouse: receiving (incoming) and shipping (outgoing). Other tasks, such as inventory movement or relocation, are also carried out. The value of raw resources is decremented, while the value of finished goods is increased.
+# Getting started
 
-## Here are some of the features of the Inventory Management System Project in Laravel:
-* Manage users
-* Manage Role
-* Stock in Management
-* Stock out Management
-* Manage Registration
+## Installation
+
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.8/installation)
+
+
+Clone the repository or doanload the project from github
+
+    git clone https://github.com/ProMahmudul/Inventory-Management-System-in-Laravel
+
+Copy that project in htdocs folder and open the folder location in cmd.
+
+Import database laravel_inventory.sql
+
+Now rename the "env.example" file to ".env"
+
+You can configure the database informations here.
+
+Now open cmd and run some commands...
+
+Install all the dependencies using composer
+
+    composer install
+
+Generate a new application key
+
+    php artisan key:generate
+
+Run the database migrations (**Set the database connection in .env before migrating**)
+
+    php artisan migrate
+
+Start the local development server
+
+    php artisan serve
+
+You can now access the server at http://localhost:8000
+    
+**Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
+
+    php artisan migrate
+    php artisan serve
+    
+## Admin Login Credentials
+
+email: mahmudul89277@gmail.com 
+
+password: 1234
+
+**you can change it from database as per your need.
+
+
+## Environment variables
+
+- `.env` - Environment variables can be set in this file
+
+***Note*** : You can quickly set the database information and other variables in this file and have the application fully working.
+
+----------
+
+# Testing API
+
+Run the laravel development server
+
+    php artisan serve
+
+
